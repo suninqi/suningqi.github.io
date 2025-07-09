@@ -1,15 +1,15 @@
 // 歌曲数据 - 实际项目中可以从服务器获取或动态生成
 const songs = [
-    { title: "白鸽乌鸦相爱的戏码", src: "suningqi/assets/audio/白鸽乌鸦相爱的戏码.mp3" },
-    { title: "枕边是她", src: "suningqi/assets/audio/枕边是她.mp3" },
-    { title: "清空", src: "suningqi/assets/audio/清空.mp3" },
-    { title: "哼着你爱听的歌", src: "suningqi/assets/audio/哼着你爱听的歌.mp3" },
-    { title: "风铃响 故人归", src: "suningqi/assets/audio/风铃响 故人归.mp3" },
-    { title: "半生风雪", src: "suningqi/assets/audio/半生风雪.mp3" },
-    { title: "我走后", src: "suningqi/assets/audio/我走后.mp3" },
-    { title: "敬往事一杯", src: "suningqi/assets/audio/敬往事一杯.mp3" },
-    { title: "白茫茫的雪满天", src: "suningqi/assets/audio/白茫茫的雪满天.mp3" },
-    { title: "陪我过个冬", src: "suningqi/assets/audio/陪我过个冬.mp3" }
+    { title: "白鸽乌鸦相爱的戏码", src: "assets/audio/白鸽乌鸦相爱的戏码.mp3" },
+    { title: "枕边是她", src: "assets/audio/枕边是她.mp3" },
+    { title: "清空", src: "assets/audio/清空.mp3" },
+    { title: "哼着你爱听的歌", src: "assets/audio/哼着你爱听的歌.mp3" },
+    { title: "风铃响 故人归", src: "assets/audio/风铃响 故人归.mp3" },
+    { title: "半生风雪", src: "assets/audio/半生风雪.mp3" },
+    { title: "我走后", src: "assets/audio/我走后.mp3" },
+    { title: "敬往事一杯", src: "assets/audio/敬往事一杯.mp3" },
+    { title: "白茫茫的雪满天", src: "assets/audio/白茫茫的雪满天.mp3" },
+    { title: "陪我过个冬", src: "assets/audio/陪我过个冬.mp3" }
 ];
 
 // 分页设置
