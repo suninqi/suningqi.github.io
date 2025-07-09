@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>苏柠七</title>
+    <link rel="stylesheet" href="suningqi/css/index.css">
+</head>
+<body>
+<div class="container">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">苏柠七</div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main class="content">
+        <div class="content-inner">
+            <!-- 音乐区 -->
+            <section class="player-section">
+                <h2>音乐区</h2>
+                <div class="player-container">
+                    <!-- 播放器控制区 -->
+                    <div class="player-controls">
+                        <div class="song-info">
+                            <h3>正在播放</h3>
+                            <p id="song-title">歌曲名称</p>
+                        </div>
+                        <div class="control-buttons">
+                            <button class="prev-btn">上一首</button>
+                            <button class="play-btn">播放</button>
+                            <button class="next-btn">下一首</button>
+                        </div>
+                    </div>
+
+                    <!-- 播放列表 -->
+                    <div class="playlist">
+                        <h3>播放列表</h3>
+                        <ul class="song-list">
+                            <!-- 歌曲列表将通过JavaScript动态生成 -->
+                        </ul>
+                        <div class="pagination-controls">
+                            <button class="prev-page">上一页</button>
+                            <span class="page-info">第 <span id="current-page">1</span> 页</span>
+                            <button class="next-page">下一页</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>
+<script src="suningqi/js/home/index.js"></script>
+</body>
+</html>

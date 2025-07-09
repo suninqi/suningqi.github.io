@@ -1,0 +1,266 @@
+/* 基础重置和根元素设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 1rem;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden; /* 防止水平滚动 */
+}
+
+/* 容器布局 */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* 导航栏样式 - 响应式修改 */
+.navbar {
+    display: flex;
+    justify-content: center; /* 让内容居中 */
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #a6e3e9;
+    color: white;
+    position: relative; /* 用于可能的额外元素定位 */
+    width: 100%;
+}
+
+.logo {
+    font-size: 2rem; /* 字体 */
+    color: #2c3e50; /* logo */
+    letter-spacing: 2px; /* 字间距 */
+}
+
+/* 主要内容区 - 响应式修改 */
+.content {
+    flex: 1;
+    padding: 1rem 0;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-inner {
+    width: 90%;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+/* 播放器区域 - 响应式修改 */
+.player-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.player-container {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+}
+
+.player-controls {
+    padding: 1rem;
+    border-bottom: 0.0625rem solid #eee;
+}
+
+.song-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.song-info p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    word-break: break-word; /* 防止长文本溢出 */
+}
+
+.control-buttons {
+    display: flex;
+    flex-wrap: wrap; /* 允许按钮换行 */
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.control-buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #a6e3e9;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1; /* 使按钮平均分配空间 */
+    min-width: 80px; /* 最小宽度 */
+    max-width: 120px; /* 最大宽度 */
+}
+
+.control-buttons button:hover {
+    background-color: #71c9ce;
+}
+
+.play-btn {
+    padding: 0.5rem 1.5rem !important;
+    font-weight: bold;
+}
+
+/* 播放列表 */
+.playlist {
+    padding: 1rem;
+}
+
+.playlist h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.song-list {
+    list-style: none;
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 0.0625rem solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.song-item:hover {
+    background-color: #a6e3e9;
+}
+
+.song-number {
+    margin-right: 0.5rem;
+}
+
+/* 分页控制样式 */
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+}
+
+.pagination-controls button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #1abc9c;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 80px;
+}
+
+.pagination-controls button:hover {
+    background-color: #16a085;
+    transform: translateY(-1px);
+}
+
+.pagination-controls button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.page-info {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0.5rem;
+    min-width: 80px;
+    text-align: center;
+}
+
+/* 媒体查询 - 小屏幕设备 */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.75rem 5%;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .content-inner {
+        width: 100%;
+        padding: 0 0.5rem;
+    }
+
+    .control-buttons button {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    .play-btn {
+        padding: 0.5rem 1rem !important;
+    }
+}
+
+/* 媒体查询 - 超小屏幕设备 */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .logo {
+        margin-right: 0;
+        font-size: 1.1rem;
+    }
+
+    .player-controls {
+        padding: 0.75rem;
+    }
+
+    .control-buttons {
+        gap: 0.25rem;
+    }
+
+    .control-buttons button {
+        min-width: 70px;
+        font-size: 0.7rem;
+    }
+
+    /* 分页控制的响应式调整 */
+    .pagination-controls {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .pagination-controls button {
+        padding: 0.5rem;
+        min-width: 70px;
+        font-size: 0.8rem;
+    }
+
+    .page-info {
+        order: -1;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
